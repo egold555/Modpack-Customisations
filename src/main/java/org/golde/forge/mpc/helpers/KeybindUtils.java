@@ -28,7 +28,7 @@ public class KeybindUtils {
 		
 		for (KeyBinding currentBinding : ALL_BINDINGS) {
 			if (currentBinding.getKeyCode() == keyId && currentBinding.getKeyModifier() == modifier)
-			    bindingNames.add(I18n.format(currentBinding.getKeyDescription()));
+			    bindingNames.add(I18n.format(currentBinding.getKeyCategory()) + ": " + I18n.format(currentBinding.getKeyDescription()));
 		}
 		return bindingNames;
 	}
